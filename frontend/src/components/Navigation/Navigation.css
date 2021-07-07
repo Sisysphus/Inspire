@@ -1,0 +1,22 @@
+.profile-dropdown {
+  position: absolute;
+}
+
+.ui-container {
+  background-color: yellow;
+}
+.ui-items > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 1;
+}
+
+.ui-li {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}

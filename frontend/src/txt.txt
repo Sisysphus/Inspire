@@ -1,0 +1,30 @@
+
+//  return (
+//     <>
+//       <div className="App">
+//         <Header />
+//         <Count
+//           count={
+//             notes.length === 0
+//               ? "Inspire yourself to something creative"
+//               : `Continue Writing notes. Is 1 enough? keep pushing!`
+//           }
+//         />
+//         <Area onAdd={addNote} />
+//         {notes.map((note, index) => (
+//           <Note
+//             key={index}
+//             id={note.id}
+//             title={note.title}
+//             textbody={note.textbody}
+//             onDelete={deleteNote}
+//             onEdit={updateNote}
+//           />
+//         ))}
+//         <Footer />
+//       </div>
+//     </>
+//   );
+// }
+
+// export default App;

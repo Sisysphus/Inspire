@@ -1,0 +1,22 @@
+.header-wrap > h3 {
+  text-align: center;
+}
+
+/* .search-bar {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
