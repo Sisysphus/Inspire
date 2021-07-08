@@ -14,3 +14,12 @@ The backend is written with with Express and NodeJs, with data persisted in Post
 
   * 🗒 **Simple Notes** - Update/delete text in a simple text mode
 
+
+
+* [ReactJS](https://reactjs.org) - See [`Web source`](./web/src)
+
+  - Complete frontend JS framework
+
+  - Follows [*React Hooks*](https://reactjs.org/docs/hooks-intro.html) pattern
+
+* [MaterialUI](http://material-ui.com/) - See [`Login.js`](web/src/components/Login.js)
