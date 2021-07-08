@@ -29,7 +29,7 @@ router.post(
   // asyncHandler overcomes try catch
   asyncHandler(async (req, res) => {
     // Req data
-    console.log(req.body);
+    // console.log(req.body);
     const { title, textbody, user_id } = req.body;
     const createNote = await Note.create({ title, textbody, user_id });
     res.json(createNote);
@@ -41,7 +41,7 @@ router.post(
 router.put(
   "/:id",
   asyncHandler(async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     const { title, textbody, user_id } = req.body;
     // const updateRecord = await Note.update({title, textbody, user_id},
     const recordNote = await Note.findOne({

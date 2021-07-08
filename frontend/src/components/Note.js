@@ -30,7 +30,7 @@ const Note = ({ title, textbody, onDelete, id, onEdit }) => {
           return setnewTextBody(e.target.value);
         }}
       ></input>
-      <button name="editButton" type="submit">
+      <button id="submit-button" name="editButton" type="submit">
         Submit
       </button>
     </form>

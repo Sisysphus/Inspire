@@ -1,40 +1,29 @@
-import "./Footer.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css";
+
+
+
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <section className="footer-subscription">
-        <p className="footer-subscription-heading">
-          What inspires you?
-          <i className="fas fa-hamsa and-more" />
-        </p>
-
-        <div className="input-areas">
-          <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Think"
-            />
-          </form>
-        </div>
-      </section>
-
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <i className="fas fa-hamsa" />
-          </div>
+          <small className="website-rights">© Inspire 2021</small>
           <div className="social-icons">
-            <i className="fab fa-linkedin" />
+            <a
+              className="social-icon-link linkedin"
+              href="https://www.linkedin.com/in/adam-faidy-bb8784105/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin" />
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 };
-
 export default Footer;

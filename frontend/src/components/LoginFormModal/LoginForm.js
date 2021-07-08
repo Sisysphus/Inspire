@@ -46,7 +46,9 @@ function LoginForm() {
             required
           />
         </label>
-        <button type="submit">Log In</button>
+        <button type="submit" className="thatone">
+          Log In
+        </button>
       </form>
     </>
   );

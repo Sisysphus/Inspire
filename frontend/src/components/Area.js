@@ -42,12 +42,14 @@ const Area = ({ onAdd }) => {
   };
 
   function submitButton(event) {
-    onAdd(note);
-    setNote({
-      title: "",
-      textbody: "",
-    });
     event.preventDefault();
+    if (note.title !== "" && note.textbody !== "") {
+      onAdd(note);
+      setNote({
+        title: "",
+        textbody: "",
+      });
+    }
   }
 
   return (

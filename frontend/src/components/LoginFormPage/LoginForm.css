@@ -1,0 +1,7 @@
+.seen {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: fantasy;
+  margin-top: 10px;
+}

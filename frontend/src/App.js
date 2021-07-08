@@ -23,7 +23,7 @@ function App() {
     (async function () {
       try {
         const response = await fetch(`/api/note/${sessionUser.id}`);
-        console.log(response.data);
+        // console.log(response.data);
         setNotes(response.data);
       } catch (e) {
         console.error(e);
@@ -50,10 +50,21 @@ function App() {
     const res = await fetch(`/api/note/${id}`, {
       method: "delete",
     });
-
-    setNotes((prevValue) => {
-      return [...prevValue.filter((note) => note.id !== id)];
+    const newValue = notes.filter((note) => {
+      return note.id !== res.data.id;
     });
+    // console.log(newValue);
+    setNotes(newValue);
+    // console.log(notes);
+
+    // console.log(newValue);
+    // setNotes((prevValue) => {
+    //   return [
+    //     ...prevValue.filter((note) => {
+    //       return note.id !== res.data.id;
+    //     }),
+    //   ];
+    // });
   };
 
   const updateNote = async (note) => {
@@ -76,11 +87,12 @@ function App() {
     <>
       <div className="App">
         <Header />
+        <Footer />
         <Navigation isLoaded={isLoaded} />
         <Count
           count={
             notes.length === 0
-              ? "Inspire yourself to something creative"
+              ? "Inspire yourself to something creative.."
               : `Continue Writing notes. Is 1 enough? keep pushing!`
           }
         />
@@ -95,8 +107,6 @@ function App() {
             onEdit={updateNote}
           />
         ))}
-
-        <Footer />
       </div>
       {isLoaded && (
         <Switch>
