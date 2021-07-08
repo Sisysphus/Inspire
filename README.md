@@ -23,3 +23,21 @@ The backend is written with with Express and NodeJs, with data persisted in Post
   - Follows [*React Hooks*](https://reactjs.org/docs/hooks-intro.html) pattern
 
 * [MaterialUI](http://material-ui.com/) - See [`Login.js`](web/src/components/Login.js)
+
+
+
+* [Heroku - Container Deployment](https://devcenter.heroku.com/categories/deploying-with-docker) - See [`heroku.yml`](./heroku.yml)
+
+  - Builds and deploys the Docker image, with a `git push`
+
+
+
+
+
+#### Backend
+
+* [Express]
+
+* [NodeJS]
+
+* [PostGres]
