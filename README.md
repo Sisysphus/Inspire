@@ -5,12 +5,6 @@ A minimal Clone of Google Keep written in ReactJS with Material UI Components, t
 The backend is written with with Express and NodeJs, with data persisted in Postgres DB file, utilzing the Sequelize ORM. The server implementation is complete with JWT Cookie based Authentication.
 
 
-<div align="center">
-
-![Light and Dark theme demo](./docs/dark-light-theme.gif)
-<br/>*Light and Dark theme*
-
-</div>
 
 ## Features
 
@@ -20,8 +14,3 @@ The backend is written with with Express and NodeJs, with data persisted in Post
 
   * 🗒 **Simple Notes** - Update/delete text in a simple text mode
 
-<div align="center">
-
-  [![Preview Button](./docs/preview-button.png)](https://googlekeep-anselm94.herokuapp.com/)
-
-</div>
