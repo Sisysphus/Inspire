@@ -12,6 +12,9 @@ import Note from "./components/Note";
 import Count from "./components/Count";
 import Footer from "./components/Footer";
 import "./index.css";
+
+import { ReactComponent as ReactLogo } from "./images/disco.svg";
+
 function App() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
@@ -118,6 +121,7 @@ function App() {
           </Route>
         </Switch>
       )}
+      <ReactLogo size={25} />
     </>
   );
 }

@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer-container">
       <section className="social-media">
         <div className="social-media-wrap">
-          <small className="website-rights">© Inspire 2021</small>
+          <small className="website-rights"></small>
           <div className="social-icons">
             <a
               className="social-icon-link linkedin"

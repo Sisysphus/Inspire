@@ -206,3 +206,15 @@ form button {
   color: #334257;
   font-size: 1em;
 }
+
+.ui-li {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
