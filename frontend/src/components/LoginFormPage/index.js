@@ -25,7 +25,7 @@ function LoginFormPage() {
 
   return (
     <>
-      <h1 className="seen">Log In</h1>
+      <h1 className="seen">Login</h1>
       <form onSubmit={handleSubmit}>
         <ul>
           {errors.map((error, idx) => (
@@ -50,7 +50,9 @@ function LoginFormPage() {
             required
           />
         </label>
-        <button type="submit">Log In</button>
+        <button type="submit">
+          <i className="CgLogIn" />
+        </button>
       </form>
     </>
   );

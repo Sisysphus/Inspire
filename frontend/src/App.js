@@ -90,7 +90,6 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <Footer />
         <Navigation isLoaded={isLoaded} />
         <Count
           count={

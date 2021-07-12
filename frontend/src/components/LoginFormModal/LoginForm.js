@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import "./LoginForm.css";
-
+import { CgLogIn } from "react-icons/cg";
 function LoginForm() {
   const dispatch = useDispatch();
   const [credential, setCredential] = useState("");
@@ -21,7 +21,7 @@ function LoginForm() {
 
   return (
     <>
-      <h1>Log In</h1>
+      <h1 className="letslog">Log In</h1>
       <form onSubmit={handleSubmit}>
         <ul>
           {errors.map((error, idx) => (
@@ -47,7 +47,7 @@ function LoginForm() {
           />
         </label>
         <button type="submit" className="thatone">
-          Log In
+          <i className="fas fa-sign-in-alt" />
         </button>
       </form>
     </>

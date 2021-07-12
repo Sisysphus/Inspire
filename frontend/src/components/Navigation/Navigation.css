@@ -1,21 +1,36 @@
 .profile-dropdown {
-  position: absolute;
+  position: relative;
+  color: black;
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-.fa-user-circle {
-  border-radius: 10px;
-  font-size: 15px;
+.profile-dropdown > li {
 }
 
-.user-lit {
+.fa-user-cog {
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  top: 100px;
 }
 
-.user-lit2 {
-  border-radius: 10px;
-  font-size: 15px;
+.sign-upp {
+  text-decoration: none;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+}
+
+.fa-user-plus {
+  font-size: 25px;
+  color: white;
+}
+
+.logsignwrap {
+  display: flex;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: #004e89;
 }

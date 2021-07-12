@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./Header.css";
 import { IoAddOutline } from "react-icons/io5";
 
 const Area = ({ onAdd }) => {
@@ -80,8 +80,8 @@ const Area = ({ onAdd }) => {
             required
           ></textarea>
         </p>
-        <button onClick={submitButton}>
-          <IoAddOutline size={20} />
+        <button className="hvr-pulse-shrink" onClick={submitButton}>
+          <IoAddOutline size={25} />
         </button>
       </form>
     </div>

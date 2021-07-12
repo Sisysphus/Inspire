@@ -31,7 +31,7 @@ const Note = ({ title, textbody, onDelete, id, onEdit }) => {
         }}
       ></input>
       <button id="submit-button" name="editButton" type="submit">
-        Submit
+        Click me
       </button>
     </form>
   );
