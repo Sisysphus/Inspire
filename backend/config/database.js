@@ -19,5 +19,6 @@ module.exports = {
     use_env_variable: "DATABASE_URL",
     dialect: "postgres",
     seederStorage: "sequelize",
+    ssl: { rejectUnauthorized: false }, //solved the problem with self signed sertificate
   },
 };
