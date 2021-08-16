@@ -36,3 +36,8 @@ The backend is written with with Express and NodeJs, with data persisted in Post
 * [NodeJS]
 
 * [PostGres]
+
+
+Next features:
+
+* Color component
