@@ -2,7 +2,8 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  font-family: fantasy;
+  font-family: Raleway;
+  margin-top: 10px;
 }
 
 .thatone {

@@ -20,5 +20,18 @@
 
 #modal-content {
   position: absolute;
-  background-color:white;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.inputname {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.inputmodal {
+  border-radius: 20px;
+  margin-left: 20px;
+  width: 300px;
 }

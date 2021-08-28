@@ -1,6 +1,6 @@
 The next features to be implemented are as follow:
 
 
-Color switch mode and persistence on a the Note component. 5-7 Primary bold colors that reflect google keeps
-
-
+Color switch mode and persistence on a the Note component.
+ 5-7 Primary bold colors that reflect google keeps
+ 

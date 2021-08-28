@@ -59,15 +59,6 @@ function App() {
     // console.log(newValue);
     setNotes(newValue);
     // console.log(notes);
-
-    // console.log(newValue);
-    // setNotes((prevValue) => {
-    //   return [
-    //     ...prevValue.filter((note) => {
-    //       return note.id !== res.data.id;
-    //     }),
-    //   ];
-    // });
   };
 
   const updateNote = async (note) => {
