@@ -1,6 +1,6 @@
 .signingup {
   text-align: center;
-  font-family: fantasy;
+  font-family: "Raleway", sans-serif;
   margin-top: 10px;
 }
 
@@ -8,4 +8,9 @@ label {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+
+.signupmodal {
+  
 }

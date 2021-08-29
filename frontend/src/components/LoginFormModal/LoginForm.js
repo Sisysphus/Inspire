@@ -22,14 +22,14 @@ function LoginForm() {
   return (
     <>
       <h1 className="letslog">Log In</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="login-form">
         <ul>
           {errors.map((error, idx) => (
             <li key={idx}>{error}</li>
           ))}
         </ul>
         <label className="inputname">
-          Username or Email
+          Username
           <input
             className="inputmodal"
             type="text"

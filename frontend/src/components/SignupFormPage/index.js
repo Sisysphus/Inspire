@@ -32,7 +32,7 @@ function SignupFormPage() {
   };
 
   return (
-    <>
+    <div className="signupmodal">
       <h1 className="signingup">Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <ul>
@@ -80,7 +80,7 @@ function SignupFormPage() {
           <VscSignIn />
         </button>
       </form>
-    </>
+    </div>
   );
 }
 
