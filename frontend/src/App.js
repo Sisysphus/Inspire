@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import Area from "./components/Area";
 import Note from "./components/Note";
 import Count from "./components/Count";
-import Footer from "./components/Footer";
+import Footer2 from "./components/Footer/Footer2";
 import Banner from "./components/Banner";
 import "./index.css";
 
@@ -113,6 +113,7 @@ function App() {
         </Switch>
       )}
       <ReactLogo size={25} />
+      <Footer2 />
     </>
   );
 }

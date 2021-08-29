@@ -3,3 +3,11 @@
   text-align: center;
   margin-top: 50px;
 }
+
+.top-footer-content > h1 {
+  font-family: "Raleway";
+}
+
+.footer-wrap {
+  background-color: blanchedalmond;
+}

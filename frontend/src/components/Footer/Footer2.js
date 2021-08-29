@@ -1,67 +1,26 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-} from "../FooterStyles";
+
+import FacebookIcon from "@material-ui/icons/Facebook";
+import "./Footer2.css";
 
 const Footer2 = () => {
   return (
-    <Box>
-      <h1 className="h1-footer">
-        GeeksforGeeks: A Computer Science Portal for Geeks
-      </h1>
-      <Container>
-        <Row>
-          <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
-            <FooterLink href="#">Ahemdabad</FooterLink>
-            <FooterLink href="#">Indore</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
-      </Container>
-    </Box>
+    <div className="footer-div">
+      <div className="footer-wrap">
+        <div className="footer-content">
+          <div className="top-footer-content">
+            <h1>Inspire: Keep yourself accountable</h1>
+          </div>
+          <ul>
+            <li>
+              <a href="www.google.com">
+                <FacebookIcon />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 };
 export default Footer2;
