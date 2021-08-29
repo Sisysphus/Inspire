@@ -11,6 +11,7 @@ import Area from "./components/Area";
 import Note from "./components/Note";
 import Count from "./components/Count";
 import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 import "./index.css";
 
 import { ReactComponent as ReactLogo } from "./images/disco.svg";

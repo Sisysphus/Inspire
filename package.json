@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/Sisysphus/Inspire/issues"
   },
-  "homepage": "https://github.com/Sisysphus/Inspire#readme"
+  "homepage": "https://github.com/Sisysphus/Inspire#readme",
+  "dependencies": {
+    "@headlessui/react": "^1.4.0",
+    "@heroicons/react": "^1.0.4",
+    "tailwindcss": "^2.2.8"
+  }
 }
