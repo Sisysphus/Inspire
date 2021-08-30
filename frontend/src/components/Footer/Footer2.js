@@ -11,13 +11,15 @@ const Footer2 = () => {
           <div className="top-footer-content">
             <h1>Inspire: Keep yourself accountable</h1>
           </div>
-          <ul>
-            <li>
-              <a href="www.google.com">
-                <FacebookIcon />
-              </a>
-            </li>
-          </ul>
+          <div className="social-iconz">
+            <ul>
+              <li>
+                <a href="www.google.com">
+                  <FacebookIcon />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

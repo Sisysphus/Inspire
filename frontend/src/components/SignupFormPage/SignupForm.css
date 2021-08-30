@@ -7,10 +7,13 @@
 label {
   display: flex;
   align-content: center;
-  justify-content: center;
 }
 
-
-.signupmodal {
-  
+.inputfieldtext {
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-left: 10px;
 }

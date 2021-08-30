@@ -17,7 +17,7 @@ function Navigation({ isLoaded }) {
         <div className="logsignwrap">
           <LoginFormModal />
           <NavLink className="sign-upp" to="/signup">
-            <i className="fas fa-user-plus"></i>
+            SignUp<i className="fas fa-user-plus"></i>
           </NavLink>
         </div>
       </>
@@ -25,10 +25,14 @@ function Navigation({ isLoaded }) {
   }
 
   return (
-    <div className="ui-container">
-      <ul className="ui-items">
-        <li className="ui-li">
-          <NavLink exact to="/"></NavLink>
+    <div className="nav-div">
+      <ul className="nav-ul">
+        <li className="nav-li">
+          <NavLink exact to="/">
+            <a className="mrhyperion" href="/">
+              Hyperion
+            </a>
+          </NavLink>
           {isLoaded && sessionLinks}
         </li>
       </ul>
