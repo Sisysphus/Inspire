@@ -23,9 +23,14 @@ function LoginFormPage() {
     );
   };
 
+  const onDemoLogin = () => {
+    setCredential("demo@user.io");
+    setPassword("password");
+  };
+
   return (
     <>
-      <h1 className="seen">Login</h1>
+      <h1 className="seen">Demo</h1>
       <form onSubmit={handleSubmit}>
         <ul>
           {errors.map((error, idx) => (
@@ -33,7 +38,7 @@ function LoginFormPage() {
           ))}
         </ul>
         <label>
-          Username or Email
+          Username
           <input
             type="text"
             value={credential}
@@ -50,6 +55,9 @@ function LoginFormPage() {
             required
           />
         </label>
+        <button type="submit" onClick={onDemoLogin}>
+          Demo
+        </button>
         <button type="submit">
           <i className="CgLogIn" />
         </button>

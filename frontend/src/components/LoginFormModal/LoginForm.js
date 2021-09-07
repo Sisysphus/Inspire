@@ -19,6 +19,11 @@ function LoginForm() {
     );
   };
 
+  const onDemoLogin = () => {
+    setCredential("demo@user.io");
+    setPassword("password");
+  };
+
   return (
     <>
       <h1 className="letslog">Log In</h1>
@@ -47,10 +52,15 @@ function LoginForm() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          <button type="submit" className="thatone">
+            Login                
+          </button>
         </label>
-        <button type="submit" className="thatone">
-          <i className="fas fa-sign-in-alt" />
-        </button>
+        <div className="demobuttonwrap">
+          <button className="demobutton" type="submit" onClick={onDemoLogin}>
+            Demo
+          </button>
+        </div>
       </form>
     </>
   );

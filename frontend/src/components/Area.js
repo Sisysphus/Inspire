@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { IoAddOutline } from "react-icons/io5";
+import {
+  ButtonDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap";
 
 const Area = ({ onAdd }) => {
   const [Expand, isExpanded] = useState(false);
+  const [dropDownOpen, setOpen] = useState(false);
   //  We create the set note via the "title" & "content" established via the name
   const [note, setNote] = useState(
     {
@@ -51,6 +58,8 @@ const Area = ({ onAdd }) => {
       });
     }
   }
+
+  const toggle = () => setOpen(!dropDownOpen);
 
   return (
     <div>

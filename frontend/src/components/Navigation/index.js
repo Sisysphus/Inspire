@@ -4,8 +4,9 @@ import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import LoginFormModal from "../LoginFormModal";
 import "./Navigation.css";
+import LoginFormPage from "../LoginFormPage";
 
-function Navigation({ isLoaded }) {
+function Navigation({ isLoaded, LoginFormPage }) {
   const sessionUser = useSelector((state) => state.session.user);
 
   let sessionLinks;
@@ -13,26 +14,30 @@ function Navigation({ isLoaded }) {
     sessionLinks = <ProfileButton user={sessionUser} />;
   } else {
     sessionLinks = (
-      <>
-        <div className="logsignwrap">
-          <LoginFormModal />
-          <NavLink className="sign-upp" to="/signup">
-            SignUp<i className="fas fa-user-plus"></i>
-          </NavLink>
-        </div>
-      </>
+      <div className="sign-up-thing">
+        <NavLink className="nav-form" to="/signup">
+          SignUp
+        </NavLink>
+        <LoginFormModal className="moddy" />
+      </div>
     );
   }
+
+  // const demobut = () => {
+  //   if (!sessionUser) {
+  //     sessionUser = <button type="button"
+  //   }
+  // };
 
   return (
     <div className="nav-div">
       <ul className="nav-ul">
         <li className="nav-li">
-          <NavLink exact to="/">
+          {/* <NavLink exact to="/">
             <a className="mrhyperion" href="/">
-              Hyperion
+              Inspire
             </a>
-          </NavLink>
+          </NavLink> */}
           {isLoaded && sessionLinks}
         </li>
       </ul>

@@ -8,6 +8,10 @@ import { useEffect } from "react";
 import { getUser } from "../../store/ducks/users";
 import RightHomePanel from "./RightPanel/RightHomePanel";
 
+
+// Pre change--- 
+
+
 const Main = () => {
   const deletedId = useSelector((state) => state.users.trashBinId);
   const token = useSelector((state) => state.authentication);

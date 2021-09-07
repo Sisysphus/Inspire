@@ -6,9 +6,11 @@
 
 .top-footer-content > h1 {
   font-family: "Raleway";
+  display: flex;
+  justify-content: center;
   color: white;
 }
 
 .footer-wrap {
-  background-color: blanchedalmond;
+  background-color: #004e89;
 }
