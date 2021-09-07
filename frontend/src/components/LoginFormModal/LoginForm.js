@@ -53,7 +53,7 @@ function LoginForm() {
             required
           />
           <button type="submit" className="thatone">
-            Login                
+            Login
           </button>
         </label>
         <div className="demobuttonwrap">

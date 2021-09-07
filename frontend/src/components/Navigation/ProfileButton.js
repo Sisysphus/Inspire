@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import Button from "@material-ui/core/Button";
+// import ListItemIcon from "@material-ui/core/ListItemIcon";
+// import ListItemText from "@material-ui/core/ListItemText";
+// import InboxIcon from "@material-ui/icons/MoveToInbox";
+// import DraftsIcon from "@material-ui/icons/Drafts";
+// import SendIcon from "@material-ui/icons/Send";
 import "./Navigation.css";
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const openMenu = () => {
     if (showMenu) return;
@@ -31,9 +40,14 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <button onClick={openMenu}>
-        <i className="fas fa-user-cog" />
-      </button>
+      <Button
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        onClick={openMenu}
+        color="primary"
+      >
+        Profile
+      </Button>
       {showMenu && (
         <ul className="profile-dropdown">
           <li>{user.username}</li>
@@ -43,6 +57,16 @@ function ProfileButton({ user }) {
           </li>
         </ul>
       )}
+      {/* <button onClick={openMenu}>Profile</button>
+      {showMenu && (
+        <ul className="profile-dropdown">
+          <li>{user.username}</li>
+          <li>{user.email}</li>
+          <li>
+            <button onClick={logout}>Log Out</button>
+          </li>
+        </ul>
+      )} */}
     </>
   );
 }

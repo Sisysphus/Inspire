@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { MdDelete } from "react-icons/md";
 import EditIcon from "@material-ui/icons/Edit";
+import Draggable from "react-draggable";
 
 const Note = ({ title, textbody, onDelete, id, onEdit }) => {
   const [newTitle, setNewTitle] = useState(title);
@@ -38,20 +39,22 @@ const Note = ({ title, textbody, onDelete, id, onEdit }) => {
 
   return (
     <div className="note">
-      {editing ? (
-        noteUpdater
-      ) : (
-        <>
-          <h3>{newTitle}</h3>
-          <p>{newTextBody}</p>
-          <button onClick={() => onDelete(id)}>
-            <MdDelete className="mcdelete" size={25} />
-          </button>
-          <button type="button" onClick={() => setEditing(true)}>
-            <EditIcon className="edit-icon" size={25} />
-          </button>
-        </>
-      )}
+      <Draggable key={id}>
+        {editing ? (
+          noteUpdater
+        ) : (
+          <>
+            <h3>{newTitle}</h3>
+            <p>{newTextBody}</p>
+            <button onClick={() => onDelete(id)}>
+              <MdDelete className="mcdelete" size={25} />
+            </button>
+            <button type="button" onClick={() => setEditing(true)}>
+              <EditIcon className="edit-icon" size={25} />
+            </button>
+          </>
+        )}
+      </Draggable>
     </div>
   );
 };
