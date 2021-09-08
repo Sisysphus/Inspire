@@ -18,11 +18,14 @@ app.use(express.json());
 
 // app.use("/notes", require("./routes/api/note"));
 
+
 // Security Middleware
 if (!isProduction) {
   // enable cors only in development
   app.use(cors());
 }
+
+
 // helmet helps set a variety of headers to better secure your app
 app.use(
   helmet({
