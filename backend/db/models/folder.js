@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Folder.associate = function (models) {
-    // associations can be defined here
+    Folder.belongsTo(models.Folder, { foreignKey: "notes_id" });
   };
   return Folder;
 };
