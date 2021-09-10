@@ -1,6 +1,7 @@
 import React from "react";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import "./Footer2.css";
 
 const Footer2 = () => {
@@ -12,10 +13,15 @@ const Footer2 = () => {
             <h1>Inspire: Keep yourself accountable</h1>
           </div>
           <div className="social-iconz">
-            <ul>
-              <li>
+            <ul id="ulicon">
+              <li className="lieed">
                 <a href="www.google.com">
                   <FacebookIcon />
+                </a>
+              </li>
+              <li className="lieed">
+                <a href="https://github.com/Sisysphus">
+                  <GitHubIcon />
                 </a>
               </li>
             </ul>
